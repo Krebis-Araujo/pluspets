@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "helvetica";
+  src: url("/Fonts/HelveticaNeue.ttc;") format("truetype");
+}
+
+@font-face {
+  font-family: "lilita";
+  src: url("/Fonts/LilitaOne-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "jsmth";
+  src: url("/Fonts/jsMath-cmbx10.ttf") format("truetype");
+}
+
+* {
+  font-family: helvetica;
+  background-color: rgb(21, 255, 0);
+}
+
+#home {
+  height: 400px;
+  width: 100%;
+  background-image: url("Imagns/banner-home.png");
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width:calc(100%-120px);
+  height: 64px;
+  padding: 60px;
+
+}
+
+#menu__logo {
+  width: 40px;
+  height: 40px;
+}
+
+#menu__nav {
+  display: flex;
+  gap:64px;
+}
+
+#menu__nav>svg {
+  width: 40px;
+  height: 40px;
+}
+
+#menu__nav>svg>* {
+  width: 40px;
+  height: 40px;
+  fill: #000000;
+}
