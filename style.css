@@ -1,21 +1,14 @@
 @font-face {
-  font-family: "helvetica";
-  src: url("/Fonts/HelveticaNeue.ttc;") format("truetype");
-}
-
-@font-face {
-  font-family: "lilita";
-  src: url("/Fonts/LilitaOne-Regular.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "jsmth";
   src: url("/Fonts/jsMath-cmbx10.ttf") format("truetype");
 }
 
 * {
   font-family: helvetica;
-  background-color: rgb(21, 255, 0);
+  /* background-color: rgb(21, 255, 0); */
+}
+body{
+  margin: 0;
 }
 
 #home {
@@ -27,10 +20,99 @@
 .menu {
   display: flex;
   justify-content: space-between;
-  width:calc(100%-120px);
+  width: calc(100%-120px);
   height: 64px;
   padding: 60px;
 
+}
+
+.menu__nav {
+  display: flex;
+  height: inherit;
+  width: 100%;
+}
+
+.menu__nav img{
+  margin-left: auto;
+}
+
+.menu__logo img
+[margin-rigth:auto]
+
+
+.menu__links{
+  margin: 0 1rem;
+}
+
+.section__small {
+  padding: 1rem;
+  display: flex;
+  height: 3rem;
+  background-color: aquamarine;
+}
+
+.section__medium {
+  padding: 1rem;
+  display: flex;
+  height:  30rem;
+  background-color: blue;
+  justify-content: center;
+  align-items: center;
+}
+
+.toolbar{
+  height: 2rem;
+  background-color: rgb(246, 246, 246);
+}
+
+.banner{
+  background-color: #fff;
+  height: inherit;
+
+}
+
+.banner__texto{
+  width: 20rem;
+    height: auto;
+}
+.button__default{
+  margin-top: 2rem;
+  width: 14rem;
+  border-radius: 1rem;
+}
+
+.texto__botao{
+  display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+}
+.sponsors {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  background-color: darkgrey;
+  align-items: center;
+}
+
+.sponsors>img {
+  height: 5rem;
+  width: 10rem;
+}
+
+.products{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.products__item{
+  display: flex;
+    background-color: #fff;
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 1rem;
+    flex-direction: column;
 }
 
 #menu__logo {
@@ -38,18 +120,26 @@
   height: 40px;
 }
 
-#menu__nav {
-  display: flex;
-  gap:64px;
-}
 
-#menu__nav>svg {
+
+/* #menu__nav>svg {
   width: 40px;
   height: 40px;
-}
+} */
 
-#menu__nav>svg>* {
+/* #menu__nav>svg>* {
   width: 40px;
   height: 40px;
   fill: #000000;
+} */
+@media screen and (max-width: 1023px) {
+  * {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  * {
+    font-size: 16px;
+  }
 }
